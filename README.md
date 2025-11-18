@@ -1,50 +1,52 @@
-<h1 align="center">
-  <img alt="JobsCalc" title="JobsCalc" src="https://i.imgur.com/Veqm7Gh.png" width="220px" />
-</h1>
+# 💼 JobsCalc - Calculadora de Jobs Freelancer
 
-<p align="center">
-  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">Licença</a>
-</p>
+Uma aplicação web para estimativa e gerenciamento de custos e valores de projetos freelancer. O objetivo é ajudar o profissional a calcular o valor ideal de um projeto, considerando horas de trabalho, valor da hora e custos fixos.
 
-<p align="center">
- <img src="https://img.shields.io/static/v1?label=PRs&message=welcome&color=49AA26&labelColor=000000" alt="PRs welcome!" />
+Este projeto foi desenvolvido durante a **Maratona Discover** da **Rocketseat** (edição 05).
 
-  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
-</p>
+## 🛠️ Tecnologias Utilizadas
 
-<br>
+O projeto utiliza um stack focado em Back-end com renderização de templates:
 
-<p align="center">
-  <img alt="dev.finances" src=".github/jobscalc.png" width="100%">
-</p>
+| Categoria | Tecnologia | Uso |
+| :--- | :--- | :--- |
+| **Back-end** | **Node.js** | Ambiente de execução. |
+| **Back-end** | **Express.js** | Framework para o servidor e roteamento. |
+| **Banco de Dados** | **SQLite** | Persistência de dados (jobs, custos e perfil). |
+| **Front-end** | **EJS** (Embedded JS) | Motor de template para renderizar HTML dinâmico. |
 
-## 🚀 Tecnologias
+## 🚀 Instalação e Execução
 
-Esse projeto foi desenvolvido com as seguintes tecnologias:
+### Pré-requisitos
 
-- HTML
-- CSS
-- JavaScript
-- NodeJS
-- EJS
-- Express
-- SQLite
+Certifique-se de ter o **Node.js** (versão LTS recomendada) e o **npm** (ou yarn) instalados em sua máquina.
 
-## 💻 Projeto
+### Passos
 
-O JobsCalc é uma aplicação de estimativa de cálculo para projetos freelancer, onde é possível cadastrar e excluir jobs (projetos), obtendo uma estimativa de custo de cada job. Além disso, é possível traçar o valor da hora da pessoa que estará usando o sistema 💰
+1.  **Clone o repositório:**
+    ```bash
+    git clone [https://github.com/stochiconrado/nlw05-jobscalc.git](https://github.com/stochiconrado/nlw05-jobscalc.git)
+    ```
+2.  **Acesse o diretório do projeto:**
+    ```bash
+    cd nlw05-jobscalc
+    ```
+3.  **Instale as dependências:**
+    ```bash
+    npm install
+    # ou yarn install
+    ```
+4.  **Execute o servidor:**
+    O projeto deve criar automaticamente o arquivo do banco de dados (`database.sqlite`) e as tabelas necessárias na primeira execução.
+    ```bash
+    npm start
+    ```
 
-## 🔖 Layout
+O servidor será iniciado e estará acessível em **`http://localhost:3000`**.
 
-Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/file/s4fytPFbDiSkv4GPSfKaLE/Jobs-Planning). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+## 💡 Como Contribuir
 
-## :memo: Licença
-
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](.github/LICENSE.md) para mais detalhes.
-
----
-
-Feito com ♥ by Rocketseat :wave: [Participe da nossa comunidade!](https://discordapp.com/invite/gCRAFhc)
+* Faça um **fork** do projeto.
+* Crie uma nova branch (`git checkout -b feature/nova-funcionalidade`).
+* Faça commit de suas alterações (`git commit -m 'feat: Adiciona nova funcionalidade'`).
+* Abra um **Pull Request**.
